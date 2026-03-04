@@ -254,9 +254,6 @@ elif page == "Popularity Predictor":
     with st.expander("Show Model Performance"):
         y_pred = model.predict(X_test)
 
-        # R-squared
-        st.write(f"R² Score: {metrics.r2_score(y_test, y_pred):.4f}")
-
         # MAE
         st.write(f"MAE: {metrics.mean_absolute_error(y_test, y_pred):.2f}")
         
